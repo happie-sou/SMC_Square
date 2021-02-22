@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout"/>
+
+    <GridLayout
+        android:id="@+id/commentWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:padding="10dp"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <EditText
+            android:id="@+id/commentBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:ems="10"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:gravity="start|top"
+            android:hint="Enter Your Comment"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/custom_input_box"
+            android:inputType="textMultiLine"
+            android:maxHeight="50dp"/>
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textColor="@color/colorWhite"
+            android:alpha="0.8"
+            android:text="Comment"
+            android:background="@drawable/custom_comment_button"
+            />
+
+    </GridLayout>
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentWrap">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</RelativeLayout>

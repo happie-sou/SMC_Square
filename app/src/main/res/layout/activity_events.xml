@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutEvents"
+    tools:context=".EventsActivity">
+
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar_layout"/>
+
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:firstDayOfWeek="2"
+                android:focusedMonthDateColor="#808080"
+                android:weekSeparatorLineColor="@color/colorAccent"
+                android:selectedWeekBackgroundColor="#000000"
+                android:maxDate="01/01/2022"
+                android:minDate="01/01/2020">
+            </CalendarView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/menu_nav_bottom" />
+
+
+</RelativeLayout>

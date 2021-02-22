@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SMC²</string>
+    <string name="events">Events</string>
+    <string name="search">Search</string>
+    <string name="myAccount">My Account</string>
+    <string name="drawer_open">Drawer Opens</string>
+    <string name="drawer_close">Drawer Closes</string>
+    <string-array name="relatedto">
+        <item>Category</item>
+        <item> Western Dance Club</item>
+        <item> Folk Dance Club</item>
+        <item> Light Music Club</item>
+        <item>  Western Dance Club</item>
+        <item> Sports</item>
+
+        <item> Students Union</item>
+        <item>  Announcement</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_friend_account">FriendAccountActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="profile">Profile</string>
+    <string name="friendRequests">Friend Requests</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="friend_request_accepted">"You are now friends with "</string>
+    <string name="status_loading">Status loading</string>
+    <string name="bondRequests">Bond Requests</string>
+</resources>

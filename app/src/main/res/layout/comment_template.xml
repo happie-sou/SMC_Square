@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    tools:context=".CommentsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/propic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:fadingEdge="vertical"
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@id/propic"/>
+
+    <TextView
+        android:id="@+id/commentDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_margin="5sp"
+        android:textSize="17sp"
+        android:layout_below="@+id/propic"/>
+
+    <ImageButton
+        android:id="@+id/deleteComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:background="@drawable/ic_baseline_cancel_24"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

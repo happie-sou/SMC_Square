@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginNewActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/layout_bg">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/depno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:ems="13"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:hint="Department number"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/cursor"
+            android:padding="10dp"
+            android:backgroundTint="@android:color/holo_purple" />
+
+
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/depno"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/colorWhite"
+            android:text="Send Verification Code"/>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:ems="13"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:hint="Enter code"
+            android:layout_marginTop="14dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textCursorDrawable="@drawable/cursor"
+            android:padding="10dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:visibility="invisible"/>
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible"
+            android:text="Verify" />
+
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/signin"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "515282633689",
+    "firebase_url": "https://smc-square.firebaseio.com",
+    "project_id": "smc-square",
+    "storage_bucket": "smc-square.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515282633689:android:6f084ee69019ebce914fc8",
+        "android_client_info": {
+          "package_name": "com.example.smc_square"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515282633689-892gkaafb8rvthueok01u7o0bmv320ph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smc_square",
+            "certificate_hash": "b24376367389c5ea2f91c21cde68a6d2f50ff4f2"
+          }
+        },
+        {
+          "client_id": "515282633689-s1p9g80kfedf101vt60l4gtjn6ldq0tr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smc_square",
+            "certificate_hash": "0816bd5f7ba9216a6ed316df649260e89e25774f"
+          }
+        },
+        {
+          "client_id": "515282633689-cr3940r3btqh240v11h197t9om98ct9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_BQ9WjxdOc3zNQYpMY05xqL3jxgBaw94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515282633689-cr3940r3btqh240v11h197t9om98ct9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

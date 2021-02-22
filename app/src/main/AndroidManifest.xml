@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smc_square">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ReactionsViewActivity"></activity>
+        <activity android:name=".FriendBondsViewActivity" />
+        <activity android:name=".FriendSplashesViewActivity" />
+        <activity android:name=".BondsViewActivity" />
+        <activity android:name=".SplashesViewActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity
+            android:name=".CommentsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".FriendRequestActivity" />
+        <activity android:name=".FriendAccountActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewPostActivity" />
+        <activity android:name=".OneSplashActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity
+            android:name=".AccountActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".EventsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".LoginNewActivity"
+            android:noHistory="true" />
+    </application>
+
+</manifest>

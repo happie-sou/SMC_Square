@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendAccountActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_above="@id/bottom_nav_view"
+        android:paddingBottom="16sp"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="10sp">
+
+        <RelativeLayout
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="150sp"
+                android:layout_height="96sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18sp" />
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:textSize="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <GridLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_below="@id/uname"
+                android:columnCount="2"
+                android:rowCount="1"
+                android:columnOrderPreserved="false"
+                android:alignmentMode="alignMargins">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/SplashesView"
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="70sp"
+                    android:layout_columnWeight="1"
+                    android:background="#FF8A339C">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp">
+                        <TextView
+                            android:id="@+id/splashHead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Splashes"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/numberOfSplashes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_below="@id/splashHead"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/BondsView"
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="70sp"
+                    android:layout_columnWeight="1"
+                    android:background="#FF8A339C">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        >
+                        <TextView
+                            android:id="@+id/bondHead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bonds"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="20sp"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bondHead"
+                            android:id="@+id/numberOfBonds"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:textSize="20sp"
+                            />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/info">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingStart="25sp"
+                    android:paddingEnd="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36sp"
+                        android:layout_height="36sp"
+                        android:src="@drawable/ic_email">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/emailId"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20sp"
+                        android:paddingEnd="20sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal"
+                    android:paddingStart="25sp"
+                    android:paddingEnd="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36sp"
+                        android:layout_height="36sp"
+                        android:src="@drawable/ic_phone">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/phone"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20sp"
+                        android:paddingEnd="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal"
+                    android:paddingStart="25sp"
+                    android:paddingEnd="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36sp"
+                        android:layout_height="36sp"
+                        android:src="@drawable/ic_key">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/deptno"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20sp"
+                        android:paddingEnd="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal"
+                    android:paddingStart="25sp"
+                    android:paddingEnd="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/sendRequest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_loading"
+                        android:textColor="@color/colorWhite"
+                        android:paddingHorizontal="15dp"
+                        android:alpha="0.8"
+                        android:background="@drawable/custom_comment_button"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu_nav_bottom"
+        android:visibility="gone"/>
+</RelativeLayout>
