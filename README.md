@@ -16,7 +16,7 @@ Home
 
 New Splash (New Post)
 
-![image](https://user-images.githubusercontent.com/45737293/180584975-716e76da-9fc4-4914-a6fc-c6dd8c79ab1c.png)
+![image](https://user-images.githubusercontent.com/45737293/180585030-ae04d4a6-c8d7-420f-9b48-8e568e33d509.png)
 
 
 Search
