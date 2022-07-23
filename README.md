@@ -14,6 +14,11 @@ Home
 ![image](https://user-images.githubusercontent.com/45737293/180583483-53393dc8-33ab-49e8-98bb-d1c538bcef65.png)
 
 
+New Splash (New Post)
+
+![image](https://user-images.githubusercontent.com/45737293/180585030-ae04d4a6-c8d7-420f-9b48-8e568e33d509.png)   ![image](https://user-images.githubusercontent.com/45737293/180585177-df6a52b7-76b3-47ee-aadd-8251bbeab9f8.png)
+
+
 Search
 
 ![image](https://user-images.githubusercontent.com/45737293/180583924-c173c2e3-11e8-46a0-9650-935b015d61a4.png)
