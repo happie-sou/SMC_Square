@@ -1,11 +1,10 @@
 # SMC_Square
 
-Social Media App developed for the students of Stella Maris College using Java, XML, Google Firebase (Firebase Authentication, Firestore NoSQL Database, Cloud Storage)
-Developed in Android Studio IDE.
+Social Media App developed for the students of Stella Maris College, Chennai using Java, XML, Google Firebase (Firebase Authentication, Firestore NoSQL Database, Cloud Storage) in Android Studio.
 
 Screen Design is as follows:
 
-Login                                                                                                              
+Login                                                                                                  
 
 ![image](https://user-images.githubusercontent.com/45737293/180580352-81f75aa9-b343-4a89-a978-d69e2e232788.png)   
 
