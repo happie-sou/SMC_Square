@@ -5,14 +5,15 @@ Developed in Android Studio IDE.
 
 Screen Design is as follows:
 
-Login
+Login                                                                                                              Home
 
-![image](https://user-images.githubusercontent.com/45737293/180580352-81f75aa9-b343-4a89-a978-d69e2e232788.png)
+
+![image](https://user-images.githubusercontent.com/45737293/180580352-81f75aa9-b343-4a89-a978-d69e2e232788.png)   ![image](https://user-images.githubusercontent.com/45737293/180583483-53393dc8-33ab-49e8-98bb-d1c538bcef65.png)
+
 
 
 Home
 
-![image](https://user-images.githubusercontent.com/45737293/180583483-53393dc8-33ab-49e8-98bb-d1c538bcef65.png)
 
 
 Search
