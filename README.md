@@ -17,7 +17,6 @@ Home
 
 Search
 
-![image](https://user-images.githubusercontent.com/45737293/180581491-c6446ac8-fbcf-4b01-a3bc-f50acb4dba5e.png)
 
 
 My Account
